@@ -2,7 +2,7 @@ import classes from './Modal.module.css'
 import ReactDOM  from 'react-dom'
 import React , {Fragment} from 'react'
 const Backdrop=(props)=>{
-    return <div className={classes.backdrop}></div>
+    return <div className={classes.backdrop} onClick={props.onClose}></div>
 }
 const ModalOverlay=(props)=>{
     return (
@@ -18,7 +18,7 @@ const Modal =(props)=>{
     return(
 
     <Fragment>
-       { ReactDOM.createPortal(<Backdrop/>,portal)}
+       { ReactDOM.createPortal(<Backdrop onClose ={props.onclose}/>,portal)}
        {  ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>,portal)}
         </Fragment>
     )
