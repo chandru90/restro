@@ -11,6 +11,16 @@ const DUMMY_MEALS =[
     name :'dosa' ,
     description : 'batter' ,
     price :60
+   },
+   { id:3 ,
+    name :'vada' ,
+    description : 'batter' ,
+    price :30
+   },
+   { id:4 ,
+    name :'poori' ,
+    description : 'Atta' ,
+    price :90
    }
 
 
